@@ -1,4 +1,5 @@
-# Password Generator Starter Code Provide viewable in "1st" commit on main branch
+# Password Generator 
+# Starter Code Provide viewable in "1st" commit on main branch
 
 ## Criteria
 - click the button to generate a password
