@@ -18,13 +18,21 @@ var confirmNumber;
 
 function generate() {
   //ASK LENGTH
-  var confirmLength =
-    window.prompt("How long would you like you password to be, Please type a number 8-128.");
-  //if not in range loop
-  if (confirmLength <= 8 || confirmLength >= 128) {
-    window.alert("between 8 and 128 please")
-    var confirmLength = window.prompt("How long would you like you password to be, Please pick a number 8-128.");
+  
+var invalid = true;
+while (invalid){
+      var confirmLength =
+        window.prompt("How long would you like you password to be, Please type a number 8-128.");
+
+//if in range loop
+    if ((confirmLength >= 8) && (confirmLength <=128)) { //added more pranthesis and changed to && from ||
+      console.log('aha!', confirmLength);   //just writes a message to the console so that you can see that you made it to this spot.
+      invalid=false;
+    }else{
+      window.alert("between 8 and 128 please")
+    }
   }
+  
 
   //CONFIRM WHAT THEY WANT OK OR CANCEL
   var confirmNumber = window.confirm("Numbers?");
