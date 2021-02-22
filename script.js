@@ -42,7 +42,7 @@ if (confirmNumber === false && confirmLetterUpper === false && confirmLetterLowe
   var confirmSpecial = window.confirm("Special Character?");
 }
 
-var passwordIs = []
+var passwordIs = []; 
 {
   if (confirmNumber) {
     passwordIs = confirmLength.concat(number)
@@ -80,6 +80,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
 var password = generatePassword();
 var passwordText = document.querySelector("#password");
+passwordText.textContent = randomPassword
 
   passwordText.value = password;
   var password = generate();
